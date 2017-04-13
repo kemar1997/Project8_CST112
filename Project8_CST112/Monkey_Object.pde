@@ -3,7 +3,7 @@ class Monkey {
   float x;
   float y;
   
-  // Variables for the movePenguin function
+  // Variables for the moveMonkey function
   float xspeed;
   float yspeed;
   
