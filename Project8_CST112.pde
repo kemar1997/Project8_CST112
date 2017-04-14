@@ -15,5 +15,5 @@ void setup() {
 }
 
 void draw() {
-  m.drawMonkey();
+  m.drawMonkey(170, 84, 35, 233, 167, 116);
 }
