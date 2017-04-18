@@ -4,8 +4,11 @@ class Monkey {
   float y;
   
   // Variables for the moveMonkey function
-  float xspeed;
-  float yspeed;
+  float xspeed = 2.8;
+  float yspeed = 2.2;
+  
+  float xdirection = 1;
+  float ydirection = 1;
   
   /*----------------------------------------------------------------*/
   
@@ -87,8 +90,17 @@ class Monkey {
   }
   
   void moveMonkey() {
-    x += xspeed;
-    y += yspeed;
+    x = x + (xspeed * xdirection);
+    y = y + (yspeed * ydirection);
+  }
+  
+  void bounceMonkey() {
+    if (x > width || x < 0) {
+    xdirection *= -1;
+    }
+    if (y > height || y < 0) {
+    ydirection *= -1;
+    }
   }
 
 }

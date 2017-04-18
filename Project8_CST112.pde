@@ -35,5 +35,9 @@ void setup() {
 }
 
 void draw() {
+  background(255);
+  
   m.drawMonkey(rgbValues[0], rgbValues[1], rgbValues[2], rgbValues[3], rgbValues[4], rgbValues[5], rgbValues[6], rgbValues[7], rgbValues[8]);
+  m.moveMonkey();
+  m.bounceMonkey();
 }
