@@ -66,9 +66,24 @@ class Monkey {
     rect(x+35, y+25, 60, 6.7, 30);
     
     // TODO: Draw the eyes 
+    fill(0);
+    ellipse(x-10, y-85.6, 5, 5);
+    ellipse(x+10, y-85.6, 5, 5);
     // TODO: Draw the mouth
+    //noFill();
+    arc(x, y-65, 20, 20, radians(0), radians(180));
     // TODO: Draw the nose
+    fill(r2, g2, b2);
+    ellipse(x, y-76, 15, 10);
     // TODO: Draw the ears
+    fill(r1, g1, b1);
+    ellipse(x-24.6, y-112, 20, 20);
+    ellipse(x+24.6, y-112, 20, 20);
+    
+    fill(r3, g3, b3);
+    ellipse(x-22.2, y-110, 15, 15);
+    ellipse(x+22.2, y-110, 15, 15);
+    
   }
   
   void moveMonkey() {
